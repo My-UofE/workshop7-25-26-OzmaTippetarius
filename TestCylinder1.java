@@ -10,9 +10,11 @@ public class TestCylinder1 {
 
         Cylinder cy1 = new Cylinder(5.0, 2.0);
         System.out.printf("Class: %s, Height: %.2f, Radius: %.2f, Colour: %s, Area: %.2f, Volume: %.2f\n", 
-            cy1.getClass(), cy1.getHeight(), cy1.getRadius(), cy1.getColor(), cy1.getArea(), cy1.getVolume());
+            cy1.getClass(), cy1.getHeight(), cy1.getRadius(), cy1.getColor(), cy1.getBaseArea(), cy1.getVolume());
 
         // add extra code below 
-
+        double surfaceArea = cy1.getArea();
+        double baseArea = cy1.getBaseArea();
+        System.out.printf("Surface Area: %.2f, Base Area: %.2f\n", surfaceArea, baseArea);
     }
 }   
